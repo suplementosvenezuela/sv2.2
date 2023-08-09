@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.left{
+  background-image: url('/assets/images/SV_puntitos_blancos.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: center;
+}
+
+.right{
+  background-image: url('/assets/images/SV_puntitos_negros.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position-y: center;
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        width: 30%;
+        /*This part is important for centering*/
+        display: grid;
+        place-items: center;
+      }
+      
+      .typing-demo {
+        width: 9ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+        color: white;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
+}
+
+@media (min-width: 750px) {
+    .wrapper {
+        width: 30%;
+        /*This part is important for centering*/
+        display: grid;
+        place-items: center;
+      }
+      
+      .typing-demo {
+        width: 30ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+        color: white;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
+}
+
+
+
+
+
+

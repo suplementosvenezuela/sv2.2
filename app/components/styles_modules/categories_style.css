@@ -1,0 +1,57 @@
+  
+
+
+@media (max-width:420px) {
+  .cardV {
+    background-image: url('/assets/images/SV_FONDO_VERTICAL.png');
+    background-repeat: no-repeat;
+    background-size: 400px;
+  }
+}
+
+@media (min-width:700px) {
+  .cardV {
+    background-image: url('/assets/images/SV_FONDO_VERTICAL.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .cardH {
+  background-image: url('/assets/images/SV_FONDO_HORIZONTAL.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+}
+
+
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    height: opx;
+    background: rgb(0,154,217);
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    height: 100%;
+    transition: 0.4s ease-out;
+  }
+  
+
+
+
+
+
+
